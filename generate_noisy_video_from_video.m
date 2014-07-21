@@ -31,9 +31,6 @@ function [] = generate_noisy_video_from_video( first_frame_name, n_of_frames, sa
 
 
 first_frame = imread(first_frame_name);
-h = size(first_frame,1);
-w = size(first_frame,2);
-
 for i = 1:n_of_frames
     
     frame_name = strcat(first_frame_name(1:size(frame_name,2)-8), sprintf('%04d',i), '.png');
